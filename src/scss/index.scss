@@ -1,7 +1,17 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import './custom.scss';
 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+$keyrus-txt: 'Roboto', sans-serif;
+
 $border-gray: #DDDDDD;
+$log-text:#939797;
+$gray-txt: #787878;
+$light-gray: #f7f6f6;
+
+$blue-keyrus: #2993DE;
 
 #background__img{
     border-top: $border-gray solid 6px;
@@ -36,8 +46,9 @@ $border-gray: #DDDDDD;
 }
 #form__title{
     font-size: 18px;
-    color: #939797;
+    color: $log-text;
     text-align: center;
+    font-family: $keyrus-txt;
 }
 .keyrus__input__group {
     width: 215px;
@@ -49,25 +60,26 @@ $border-gray: #DDDDDD;
 }
 .input__field{
     font-size: 14px;
-    color: #787878;
+    color: $gray-txt;
+    font-family: $keyrus-txt;
     border-right: none;
-    background-color: #f7f6f6;
+    background-color: $light-gray;
     border: none;
     box-shadow: -0.3px -0.9px 0px rgba(0, 0, 0, 0.11);
-
 }
 .input__icon_cont {
     width: 37px;
-    background: #f7f6f6;
+    background: $light-gray;
     border: none;
     box-shadow: 0.25px -0.9px 0 rgba(0, 0, 0, 0.11);
 }
 
 .btn__primary__keyrus {
-    background-color: #2993DE;
+    background-color: $blue-keyrus;
     color: white;
     font-size: 16px;
     font-weight: 500;
+    font-family: $keyrus-txt;
 }
 .btn__primary__keyrus--login{
     width: 117px;
@@ -76,7 +88,7 @@ $border-gray: #DDDDDD;
 
 .login-component__label--remember {
     font-size: 12px;
-    color: #939797;
+    color: $log-text;
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -88,10 +100,11 @@ $border-gray: #DDDDDD;
     padding-top: 10px;
 }
 .actions__txt__register {
-    color: #787878 ;
+    color: $gray-txt;
     text-align: center;
     margin-bottom: 0px;
     cursor: pointer;
+    font-family: $keyrus-txt;
 }
 .actions__txt__register--link {
     text-decoration: underline;
@@ -105,7 +118,11 @@ $border-gray: #DDDDDD;
 }
 
 .actions__txt__link {
-    color: #2993DE;
+    color: $blue-keyrus;
+}
+.actions__txt__link--big {
+    text-decoration: underline;
+    color: $blue-keyrus;
 }
 
 .info__container{
@@ -125,7 +142,7 @@ $border-gray: #DDDDDD;
 .info__box__txt__cont{
     height: 30px;
     width: 92.5%;
-    background-color: #ffffff;
+    background-color: white;
     cursor: pointer;
 }
 
@@ -139,6 +156,7 @@ $border-gray: #DDDDDD;
 .keyrus__txt {
     font-size: 12px;
     font-style: italic;
+    font-family: $keyrus-txt;
     color: #969696;
     margin-bottom: 0px;
     text-align: center;

@@ -1,2 +1,146 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import './custom.scss';
+
+$border-gray: #DDDDDD;
+
+#background__img{
+    border-top: $border-gray solid 6px;
+    border-bottom: $border-gray solid 6px;
+    height: 100vh;
+    background-image: url("/images/back-grid.png");
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login__container {
+    height: 339px;
+    width: 395px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+#form__container{
+    height: 280px;
+    width: 100%;
+    background-image: url("/images/form-body.png"); 
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#inputs__cont {
+    width: 80%;
+    margin: 0 auto;
+}
+#form__title{
+    font-size: 18px;
+    color: #939797;
+    text-align: center;
+}
+.keyrus__input__group {
+    width: 215px;
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    
+
+}
+.input__field{
+    font-size: 14px;
+    color: #787878;
+    border-right: none;
+    background-color: #f7f6f6;
+    border: none;
+    box-shadow: -0.3px -0.9px 0px rgba(0, 0, 0, 0.11);
+
+}
+.input__icon_cont {
+    width: 37px;
+    background: #f7f6f6;
+    border: none;
+    box-shadow: 0.25px -0.9px 0 rgba(0, 0, 0, 0.11);
+}
+
+.btn__primary__keyrus {
+    background-color: #2993DE;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn__primary__keyrus--login{
+    width: 117px;
+    height: 42px;
+}
+
+.login-component__label--remember {
+    font-size: 12px;
+    color: #939797;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+
+.actions__text__cont {
+    height: 50px;
+    width: 100%;
+    padding-top: 10px;
+}
+.actions__txt__register {
+    color: #787878 ;
+    text-align: center;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.actions__txt__register--link {
+    text-decoration: underline;
+}
+.actions__txt__register--default {
+    font-size: 14px;
+}
+.actions__txt__register--small {
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.actions__txt__link {
+    color: #2993DE;
+}
+
+.info__container{
+    height: 30px;
+    width: 475px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__box__square{
+    height: 30px;
+    width: 30px;
+    background-color: #7b7b7b;
+    cursor: pointer;
+}
+.info__box__txt__cont{
+    height: 30px;
+    width: 92.5%;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.info__icon {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 650;
+    color: #ffffff;
+}
+
+.keyrus__txt {
+    font-size: 12px;
+    font-style: italic;
+    color: #969696;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 7px;
+}

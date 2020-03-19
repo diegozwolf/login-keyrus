@@ -1,2 +1,11 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import './custom.scss';
+
+$border-gray: #dddddd;
+
+#background__img{
+    border-top: $border-gray solid 6px;
+    border-bottom: $border-gray solid 6px;
+    height: 100vh;
+    background-image: url("/images/back-grid.png");
+}

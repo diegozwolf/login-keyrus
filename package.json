@@ -1,16 +1,6 @@
 {
-  "name": "bootstrap-webpack-jquery-boilerplate",
-  "license": "MIT",
-  "author": "xxhomey19",
-  "homepage": "https://xxhomey19.github.io/bootstrap-webpack-jquery-boilerplate/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xxhomey19/bootstrap-webpack-jquery-boilerplate/tree/master"
-  },
-  "bugs": {
-    "url": "https://github.com/xxhomey19/bootstrap-webpack-jquery-boilerplate/issues"
-  },
-  "version": "1.6.4",
+  "name": "keyrus_login_diego_zuluaga",
+  "version": "1.0.0",
   "scripts": {
     "build": "webpack -p --progress --mode production --config webpack.config.js",
     "predeploy": "npm run build",

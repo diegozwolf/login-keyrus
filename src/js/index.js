@@ -69,10 +69,33 @@ fetch(url)
           for (let i = 0; i < planetObject.length; i++) {
             character.homeworld = planetInformation;
           }
-
-          console.log(character);
         })
         .catch(err => console.log(err));
+
+      //films information
+      let filmsList = characterSpecificInfo.films;
+      character.films = [];
+      //  console.log(character)
+      let filmObject = [];
+      for (var i = 0; i < filmsList.length; i++) {
+        fetch(filmsList[i])
+          .then(response => response.json())
+          .then(filmData => {
+            let filmInformation = filmData;
+            filmInformation = (({
+              title,
+              episode_id,
+              opening_crawl,
+              director,
+            }) => ({ title, episode_id, opening_crawl, director }))(
+              filmInformation
+            );
+            filmObject.push(filmInformation);
+          })
+          .catch(err => console.log(err));
+      }
+      character.films = filmObject;
+      console.log(character);
     });
   })
 

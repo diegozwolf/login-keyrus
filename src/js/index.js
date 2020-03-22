@@ -75,7 +75,6 @@ fetch(url)
       //films information
       let filmsList = characterSpecificInfo.films;
       character.films = [];
-      //  console.log(character)
       let filmObject = [];
       for (var i = 0; i < filmsList.length; i++) {
         fetch(filmsList[i])

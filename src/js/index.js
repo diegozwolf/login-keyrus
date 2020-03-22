@@ -65,11 +65,11 @@ fetch(url)
           }) => ({ name, terrain, gravity, climate, population }))(
             planetInformation
           );
-
-          for (let planetItem in planetInformation) {
+          let planetObject = Object.keys(planetInformation);
+          for (let i = 0; i < planetObject.length; i++) {
             character.homeworld = planetInformation;
-            console.log(planetItem);
           }
+
           console.log(character);
         })
         .catch(err => console.log(err));
